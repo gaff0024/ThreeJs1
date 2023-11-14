@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 //scene setup: 
 const scene = new THREE.Scene();
 //Create sphere
-const geometry = new THREE.SphereGeometry( 3, 64, 64 ); 
+const geometry = new THREE.BoxGeometry( 5, 5, 5 ); 
 // 64 64 makes it smooth, 3 is the radius\
 //Create material, Material is the color or texture of the object
 const material = new THREE.MeshStandardMaterial({
@@ -86,8 +86,9 @@ loop();
 //Animations, GSAP:
 const t1 = gsap.timeline({defaults: {duration: 1}});
 t1.fromTo(mesh.scale, {z:0, x:0, y:0}, {z:1, x:1, y:1});
-t1.fromTo("nav", {y: "-100%"}, {y: "0%"})
+t1.fromTo("nav", {y: "-160%"}, {y: "0%"})
 t1.fromTo(".title", {opacity: 0}, {opacity: 1})
+t1.fromTo(".titleExplorer", {opacity: 0}, {opacity: 1})
 
 
 //Mouse anination color change

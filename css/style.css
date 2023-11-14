@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.188);
+  max-width: 65em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+ul a {
+  font-weight: normal;
+}
+
+.title {
+  color: white;
+  z-index: 2;
+  font-weight: normal;
+  position: absolute;
+  font-size: 2.5rem;
+  left: 50%;
+  top: 87%;
+  transform: translate(-50%, -25%);
+}
+
+/* Explore page */
+
+.titleExplorer {
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.container {
+  max-width: 65em;
+  margin:0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.optionsContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.options {
+  margin-top: 4rem;
+  background-color: rgba(128, 128, 128, 0.188);
+  height: 100%;
+  border-radius: 25px;
+  padding: 3rem;
+}
+
+.card {
+  display: grid;
+  grid-template-areas: 
+  "image" "text";
+  grid-template-rows: 2fr 1fr;
+  background-color: black;
+  height: 25rem;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  /* background-color: rgba(128, 128, 128, 0.188);
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 2rem;
+  height: 40rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out; */
+}
+
+.image {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242309;
+  height: 100%;
+  width: 100%;
+}
+
+.image img {
+  height: 50%;
+  width: 50%;
+  position: relative;
+}
+
+.text {
+  grid-area: text;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+  background-color: rgb(32, 58, 84);
+  color: white;
+  padding: .5rem .8rem .5rem .8rem;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+
+
+
+
+
+/* < !-- HTML !--><button class="button-1" role="button">Button 1</button>
+
+/* CSS */
+/* .button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+} */
